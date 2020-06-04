@@ -247,6 +247,76 @@ p {
   }
 }
 
+/** Modal */
+.modal {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+  top: 75%;
+  left: 0;
+  right: 0;
+  max-width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.modal-close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+
+/** Overlay */
+.overlay {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/** JS */
+.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.subtittle {
+  background-color: #c51a00;
+  height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: #000;
+}
+
+.float-my-children > * {
+  margin-right: 5px;
+}
+
+.imgg {
+  float: left;
+  padding-right: 5px;
+  margin-top: 17x;
+  border: 1px solid #021a40;
+}
+
 .europe {
   margin-top: 80px;
   display: block;
@@ -357,115 +427,115 @@ p {
 }
 
 .europe .btn6 {
-    position: absolute;
-    top: 33%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 5px;
-    background: transparent;
-    border: none;
-    transform: rotate(90deg);
-    font-size: 0;
-    width: 110px;
-    height: 70px;
-  }
+  position: absolute;
+  top: 33%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+  transform: rotate(90deg);
+  font-size: 0;
+  width: 110px;
+  height: 70px;
+}
 
-  .europe .btn7 {
-    position: absolute;
-    top: 40%;
-    left: 27%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 5px;
-    background: transparent;
-    border: none;
-    font-size: 0;
-    width: 20px;
-    height: 20px;
-  }
+.europe .btn7 {
+  position: absolute;
+  top: 40%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+}
 
-  .europe .btn8 {
-    position: absolute;
-    top: 32%;
-    left: 26%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 5px;
-    background: transparent;
-    border: none;
-    transform: rotate(90deg);
-    font-size: 0;
-    width: 20px;
-    height: 20px;
-  }
+.europe .btn8 {
+  position: absolute;
+  top: 32%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+  transform: rotate(90deg);
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+}
 
-  .europe .btn9 {
-    position: absolute;
-    top: 56%;
-    left: 34%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 5px;
-    background: transparent;
-    border: none;
-    font-size: 0;
-    width: 20px;
-    height: 20px;
-  }
+.europe .btn9 {
+  position: absolute;
+  top: 56%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+}
 
-  .europe .btn10 {
-    position: absolute;
-    top: 33%;
-    left: 54%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 5px;
-    background: transparent;
-    border: none;
-    font-size: 0;
-    width: 110px;
-    height: 70px;
-  }
+.europe .btn10 {
+  position: absolute;
+  top: 33%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+  font-size: 0;
+  width: 110px;
+  height: 70px;
+}
 
-  .europe .btn11 {
-    position: absolute;
-    top: 44%;
-    left: 47%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 5px;
-    background: transparent;
-    border: none;
-    font-size: 0;
-    width: 40px;
-    height: 40px;
-  }
+.europe .btn11 {
+  position: absolute;
+  top: 44%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+}
 
-  .europe .btn12 {
-    position: absolute;
-    top: 54%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 5px;
-    background: transparent;
-    border: none;
-    font-size: 0;
-    width: 40px;
-    height: 40px;
-  }
+.europe .btn12 {
+  position: absolute;
+  top: 54%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+}
