@@ -17,7 +17,6 @@ $(document).ready(function () {
   const textDE =
     "We make soft drinks how they should be. Each bottle contains only the best organic ingredients and supports fair trade. So far, so delicious.";
 
-    
   // Sticky Header
   $(window).scroll(function () {
     if ($(window).scrollTop() > 100) {
@@ -56,6 +55,8 @@ $(document).ready(function () {
     );
     event.preventDefault();
   });
+
+  $(".gallery");
 
   $(".europe").click(function (e) {
     switch (e.target.value) {
@@ -139,10 +140,6 @@ $(document).ready(function () {
     modalPopUp("hide");
   });
 
-  $(".modal-close-btn").click(function () {
-    modalPopUp("hide");
-  });
-
   function modalPopUp(event) {
     if (event === "show") {
       $(".overlay").addClass("is-visible");
@@ -157,9 +154,6 @@ $(document).ready(function () {
     let model = document.createElement("div");
     model.className = "modal";
     model.innerHTML = `
-        <button class="modal-close-btn">
-        <i>x</i>
-      </button>
       <div class="subtittle">
         <h1>Help ${country}!</h1>
       </div>
@@ -176,7 +170,15 @@ $(document).ready(function () {
         ${text}
         </div>
       </div>`;
-    console.log("TEST: ", model);
+
     document.body.appendChild(model);
   }
+
+  const gallery = document.querySelector(".gallery__item");
+
+  gallery.addEventListener("mouseover", (e) => {
+    e.preventDefault();
+    console.log("hello");
+    document.querySelectorAll(".gallery_item").console.log("hey");
+  });
 });
