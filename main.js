@@ -121,19 +121,6 @@ $(document).ready(function () {
         modalPopUp("show");
         break;
     }
-    /*if (e.target.value == "PT") {
-      buildModel(
-        "Portugal",
-        "ENTRAJUDA",
-        "https://www.entrajuda.pt/",
-        textPT,
-        "https://scontent.fopo1-1.fna.fbcdn.net/v/t1.0-9/10391036_1021192537951491_2595566845267993833_n.png?_nc_cat=105&_nc_sid=09cbfe&_nc_ohc=w5o1wdRREKwAX9wE9dv&_nc_ht=scontent.fopo1-1.fna&oh=477a93f3b52ffbc6f535e0a1d3097e26&oe=5EFF3A21"
-      );
-      modalPopUp("show");
-    } else if (e.target.value == "ES") {
-      buildModel("Espanha", "charity", "link", "text", "logo");
-      modalPopUp("show");
-    }*/
   });
 
   $(".overlay").click(function () {
@@ -151,7 +138,11 @@ $(document).ready(function () {
   }
 
   function buildModel(country, charity, link, text, logo) {
-    let model = document.createElement("div");
+    let model = $(".modal");
+    if (model.length > 0) {
+      model.remove();
+    }
+    model = document.createElement("div");
     model.className = "modal";
     model.innerHTML = `
       <div class="subtittle">
@@ -170,15 +161,6 @@ $(document).ready(function () {
         ${text}
         </div>
       </div>`;
-
     document.body.appendChild(model);
   }
-
-  const gallery = document.querySelector(".gallery__item");
-
-  gallery.addEventListener("mouseover", (e) => {
-    e.preventDefault();
-    console.log("hello");
-    document.querySelectorAll(".gallery_item").console.log("hey");
-  });
 });
