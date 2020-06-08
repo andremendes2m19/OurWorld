@@ -163,8 +163,8 @@ p {
 
 .hero {
   position: relative;
-  background: url(https://wallpapercave.com/wp/wp3096505.jpg) no-repeat center
-    center fixed;
+  background: url(https://www.alivehospice.org/getattachment/e79ba6d3-99cb-4c41-abea-77203d777b7b/Need-for-Charity-Care-is-Growing)
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -247,13 +247,24 @@ p {
   }
 }
 
+.infoWeb {
+}
+
+.infoImg {
+  width: 35%;
+  float: left;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
 .container {
   position: relative;
+  cursor: pointer;
   margin-top: 60px;
   width: 400px;
   height: 400px;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 .gallery__img {
@@ -322,7 +333,7 @@ h2 {
 }
 
 /** Overlay */
-.overlay {
+.fadeOut {
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s;
@@ -361,6 +372,7 @@ h2 {
 .imgg {
   float: left;
   padding-right: 5px;
+  margin: 25px;
   border: 1px solid #021a40;
 }
 
@@ -596,10 +608,10 @@ h2 {
   height: 100px;
   color: #c51a00;
   font-family: "Montserrat", sans-serif;
-  margin-left: 100px;
+  margin-left: 125px;
   text-align: center;
 }
 
 .item + .item {
-  margin-left: 25px;
+  margin-left: 55px;
 }

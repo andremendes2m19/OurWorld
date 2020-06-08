@@ -83,7 +83,7 @@ $(document).ready(function () {
       case "FR":
         buildModel(
           "France",
-          "Federación Española de Bancos de Alimentos",
+          "ARSEP Fondation  ",
           "https://www.arsep.org/",
           textFR,
           "https://scontent.fopo1-1.fna.fbcdn.net/v/t1.0-9/13511_661158293988082_7261246807168855141_n.png?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=IMcwroDSpHkAX9a1T2t&_nc_ht=scontent.fopo1-1.fna&oh=682c6919ce29c8d2036c733557c1e7d4&oe=5F006BC8"
@@ -123,16 +123,16 @@ $(document).ready(function () {
     }
   });
 
-  $(".overlay").click(function () {
+  $(".fadeOut").click(function () {
     modalPopUp("hide");
   });
 
   function modalPopUp(event) {
     if (event === "show") {
-      $(".overlay").addClass("is-visible");
+      $(".fadeOut").addClass("is-visible");
       $(".modal").addClass("is-visible");
     } else {
-      $(".overlay").removeClass("is-visible");
+      $(".fadeOut").removeClass("is-visible");
       $(".modal").removeClass("is-visible");
     }
   }
